@@ -2,9 +2,11 @@ name: Automated Preprocessing
 
 on:
   push:
-    paths:
-      - 'preprocessing/automate_Nama-siswa.py'
-      - 'train_cleaned.csv'
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   preprocess-data:
