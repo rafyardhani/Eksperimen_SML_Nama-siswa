@@ -42,3 +42,4 @@ jobs:
           git add preprocessing/train_pca.csv preprocessing/test_pca.csv 
           git commit -m 'Berhasil update dataset' || echo "Tidak Berhasil Mengunggah dataset terbaru"
           git push
+ 
