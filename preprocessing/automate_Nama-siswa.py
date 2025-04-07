@@ -122,3 +122,5 @@ def preprocessing_pipeline(csv_path):
     return train_final, test_final
 file_path = f'./train_cleaned.csv'
 train_final, test_final = preprocessing_pipeline(file_path)
+train_final.to_csv("train_pca.csv", index=False)
+test_final.to_csv("test_pca.csv", index=False)
